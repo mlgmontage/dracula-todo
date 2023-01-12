@@ -1,5 +1,13 @@
+import "app/styles/index.css";
+import Routing from "pages";
+import { withProviders } from "./providers/with-provider";
+
 const App = () => {
-  return <div className="App">FSD is awesome</div>;
+  return (
+    <div className="App">
+      <Routing />
+    </div>
+  );
 };
 
-export default App;
+export default withProviders(App);
