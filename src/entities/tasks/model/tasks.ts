@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Tasks } from "..";
+import { Tasks } from "./tasks.types";
 
 // TODO: Hard-coded data should be deleted later
 const initialState: Tasks = [

@@ -6,3 +6,8 @@ body {
   color: var(--gray-500);
   background-color: var(--dark);
 }
+
+button,
+a {
+  cursor: pointer;
+}

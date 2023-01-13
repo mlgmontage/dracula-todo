@@ -1,7 +1,12 @@
+import { Sidebar } from "features/tasks";
 import { Window } from "shared/ui";
 
 const Main = () => {
-  return <Window>Hello, window</Window>;
+  return (
+    <Window>
+      <Sidebar />
+    </Window>
+  );
 };
 
 export default Main;
