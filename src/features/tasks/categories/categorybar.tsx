@@ -40,16 +40,16 @@ const Item: React.FC<LinkProps> = ({ children, ...props }) => {
 export const CategoryBar = () => {
   return (
     <Menu>
-      <Item to="/">
+      <Item to="/" state={{ message: "Мои задачи" }}>
         <Envelope /> Мои задачи
       </Item>
-      <Item to="/important">
+      <Item to="/important" state={{ message: "Важные" }}>
         <Star /> Важные
       </Item>
-      <Item to="/completed">
+      <Item to="/completed" state={{ message: "Выполненные" }}>
         <Checkmark /> Выполненные
       </Item>
-      <Item to="/deleted">
+      <Item to="/deleted" state={{ message: "Удаленные" }}>
         <Trash /> Удаленные
       </Item>
     </Menu>
