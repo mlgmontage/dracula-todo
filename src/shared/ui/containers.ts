@@ -24,3 +24,9 @@ export const TaskRow = styled.div`
   border-bottom: 1px solid var(--gray-900);
   padding-inline: 20px;
 `;
+
+export const Overlay = styled.div`
+  position: absolute;
+  inset: 0;
+  background-color: var(--overlay);
+`;

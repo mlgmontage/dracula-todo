@@ -1,6 +1,6 @@
 import { createSelector, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "app/store";
-import { Category, Tag, TaskFilter, Tasks } from "./tasks.types";
+import { Category, Tag, Task, TaskFilter, Tasks } from "./tasks.types";
 
 type State = {
   list: Tasks;
@@ -48,6 +48,9 @@ const tasksSlice = createSlice({
   name: "tasks",
   initialState,
   reducers: {
+    createTask: (state, { payload }: PayloadAction<Task>) => {
+      state.list.push(payload);
+    },
     setCategoryFilter: (
       state,
       { payload }: PayloadAction<Category | undefined>
@@ -65,7 +68,8 @@ const tasksSlice = createSlice({
   },
 });
 
-export const { setCategoryFilter, setTagFilter } = tasksSlice.actions;
+export const { setCategoryFilter, setTagFilter, createTask } =
+  tasksSlice.actions;
 
 export const tasksSelector = (state: RootState) => state.tasks.list;
 export const tasksFilterSelector = (state: RootState) => state.tasks.filters;

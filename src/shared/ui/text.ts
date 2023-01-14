@@ -22,3 +22,10 @@ export const Badge = styled.small<BadgeProps>`
       background-color: var(--green-100);
     `}
 `;
+
+export const ModalTitle = styled.div`
+  font-weight: 500;
+  padding: 10px 15px;
+  color: var(--light);
+  background-color: var(--dark);
+`;

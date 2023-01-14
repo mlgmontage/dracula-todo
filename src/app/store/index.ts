@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
+import { modalsReducer } from "entities/modals/model/modals";
 import { taskReducer } from "entities/tasks";
 
 export const store = configureStore({
   reducer: {
     tasks: taskReducer,
+    modals: modalsReducer,
   },
   devTools: true,
 });

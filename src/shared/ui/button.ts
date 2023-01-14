@@ -1,11 +1,24 @@
 import styled from "@emotion/styled";
 
-export const Button = styled.button`
+type ButtonProps = {
+  outlined?: boolean;
+};
+
+export const Button = styled.button<ButtonProps>`
   display: inline-block;
   padding: 10px 20px;
 
   color: white;
-  background-color: var(--purple-500);
   border: none;
   border-radius: var(--rounded);
+
+  background-color: var(--purple-500);
+
+  ${(props) =>
+    props.outlined &&
+    `
+      color: var(--purple-500);
+      background-color: transparent;
+      border: 1px solid var(--purple-500);
+  `}
 `;

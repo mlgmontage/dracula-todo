@@ -9,3 +9,11 @@ div[class*="flex-"] {
 div[class*="grid-"] {
   display: grid;
 }
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.pointer {
+  cursor: pointer;
+}

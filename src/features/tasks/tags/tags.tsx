@@ -27,9 +27,7 @@ export const Tags = () => {
 
   return (
     <div style={{ marginLeft: "22px" }}>
-      <div style={{ marginBlock: "20px" }}>
-        <small>Тэги</small>
-      </div>
+      <div style={{ marginBlock: "20px" }}>Тэги</div>
 
       <TagRow
         className={byTag === "productivity" ? "active" : ""}
