@@ -1,0 +1,11 @@
+.w-full {
+  width: 100%;
+}
+
+div[class*="flex-"] {
+  display: flex;
+}
+
+div[class*="grid-"] {
+  display: grid;
+}

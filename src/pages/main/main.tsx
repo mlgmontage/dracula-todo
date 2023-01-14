@@ -1,13 +1,23 @@
-import { CategoryRibbon } from "entities/tasks/ui/categoryribbon";
+import { CategoryRibbon, TaskItem, tasksSelector } from "entities/tasks";
 import { Sidebar } from "features/tasks";
-import { Window } from "shared/ui";
+import { useSelector } from "react-redux";
+import { TaskRow, Window } from "shared/ui";
 
 const Main = () => {
+  const tasks = useSelector(tasksSelector);
+
   return (
-    <Window>
+    <Window className="flex-window">
       <Sidebar />
-      <div>
+      <div className="w-full">
         <CategoryRibbon />
+        {tasks.map((task) => {
+          return (
+            <TaskRow>
+              <TaskItem task={task} />
+            </TaskRow>
+          );
+        })}
       </div>
     </Window>
   );

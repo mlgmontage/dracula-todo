@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap");
 @import url("./base.css");
+@import url("./utils.css");
 
 :root {
   /* Fonts */
   --ff: Montserrat, Ubuntu, sans-serif;
   --fz: 14px;
+  --fsm: 12px;
 
   /* Colors */
   --dark: hsl(224, 38%, 14%);
@@ -18,6 +20,9 @@
 
   --purple-500: hsl(271, 70%, 60%); /* button */
   --purple-600: hsl(245, 82%, 67%); /* text */
+
+  --green-100: hsla(147, 67%, 47%, 0.12);
+  --green-500: hsl(147, 67%, 47%);
 
   /* Radius */
   --rounded: 5px;

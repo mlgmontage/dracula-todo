@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 
 export const Window = styled.div`
-  display: flex;
   width: 1200px;
   min-height: 500px;
   margin-inline: auto;
@@ -16,4 +15,12 @@ export const Window = styled.div`
 export const SidebarContainer = styled.div`
   width: 200px;
   border-right: 1px solid var(--gray-900);
+`;
+
+export const TaskRow = styled.div`
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1px solid var(--gray-900);
+  padding-inline: 20px;
 `;

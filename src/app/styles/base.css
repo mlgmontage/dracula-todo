@@ -11,3 +11,7 @@ button,
 a {
   cursor: pointer;
 }
+
+small {
+  font-size: var(--fsm);
+}
