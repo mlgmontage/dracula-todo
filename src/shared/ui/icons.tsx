@@ -63,3 +63,51 @@ export const Star = () => (
     />
   </svg>
 );
+
+export const GreenDot = () => (
+  <svg
+    width="10"
+    height="10"
+    viewBox="0 0 10 10"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle cx="5" cy="5" r="5" fill="#28C76F" />
+  </svg>
+);
+
+export const OrangeDot = () => (
+  <svg
+    width="10"
+    height="10"
+    viewBox="0 0 10 10"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle cx="5" cy="5" r="5" fill="#FF9F43" />
+  </svg>
+);
+
+export const PurpleDot = () => (
+  <svg
+    width="10"
+    height="10"
+    viewBox="0 0 10 10"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle cx="5" cy="5" r="5" fill="#7367F0" />
+  </svg>
+);
+
+export const RedDot = () => (
+  <svg
+    width="10"
+    height="10"
+    viewBox="0 0 10 10"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle cx="5" cy="5" r="5" fill="#EA5455" />
+  </svg>
+);

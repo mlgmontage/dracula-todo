@@ -1,4 +1,4 @@
-import { Date } from "shared/ui";
+import { Badge, Date } from "shared/ui";
 import { Task } from "../model/tasks.types";
 
 type Props = {
@@ -10,8 +10,10 @@ export const TaskItem: React.FC<Props> = ({ task }) => {
     <div className="flex-tasks w-full">
       <div style={{ flex: "1" }}>{task.text}</div>
       <div>
-        {task.tags.map((tag) => (
-          <span>{tag}</span>
+        {task.tags.map((tag, i) => (
+          <Badge type="productivity" key={i}>
+            {tag}
+          </Badge>
         ))}
       </div>
       <Date>{task.date}</Date>
